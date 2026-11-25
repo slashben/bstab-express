@@ -3,6 +3,8 @@ name: ci
   push:
     branches:
     - hist/**
+  schedule:
+  - cron: '17 5 * * *'
   workflow_dispatch:
     inputs:
       label:
